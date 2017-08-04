@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/wallee_payment_form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wallee_button_submit_payment_form"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#5cb85c"
+        android:text="@string/wallee_button_submit_payment_form"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/wallee_button_other_payment_method"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#5cb85c"
+        android:text="@string/wallee_button_other_payment_method"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wallee Sample App</string>
+
+    <string name="action_pay">Pay</string>
+</resources>

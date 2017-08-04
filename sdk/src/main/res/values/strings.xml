@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android SDK</string>
+    <string name="string_filler">string_filler</string>
+    <string name="wallee_payment_form_view_http_error">There was an error during the payment process.
+        This can happen because of long loading times or because the connection to the payment server
+        has failed. You may restart and try again to pay.</string>
+    <string name="wallee_success_message">The transaction was successfully completed.</string>
+    <string name="wallee_default_error_message">Unfortunately there went something wrong with the transaction:</string>
+    <string name="wallee_default_awaiting_final_state_message">We are awaiting a feedback from your payment.
+        This may take several minutes until we receive a final feedback.</string>
+    <string name="wallee_unexpected_error">We experienced an unexpected error. The payment has failed. You may want to retry.</string>
+    <string name="wallee_button_submit_payment_form">Confirm</string>
+    <string name="wallee_button_other_payment_method">Other</string>
+</resources>

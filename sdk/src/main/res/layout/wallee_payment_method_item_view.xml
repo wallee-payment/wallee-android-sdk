@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="8dp">
+
+    <com.wallee.android.sdk.view.selection.PaymentMethodImageView
+        android:id="@+id/wallee_payment_method_icon"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        >
+
+        <TextView
+            android:id="@+id/wallee_payment_method_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Credit Card"/>
+    </LinearLayout>
+</LinearLayout>

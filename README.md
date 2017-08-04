@@ -1,1 +1,0 @@
-# wallee-android-sdk

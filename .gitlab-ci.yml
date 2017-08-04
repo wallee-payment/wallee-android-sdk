@@ -1,0 +1,34 @@
+before_script:
+    - chmod +x ./gradlew
+    - git submodule update --init --recursive
+
+stages:
+  - build
+  - test
+  - test_lint
+  - publish
+
+#test-allow_error:
+#  stage: test_lint
+#  script:
+#    - code/android/Teamup/gradlew -p code/android/Teamup lint
+#    - mkdir artifacts
+#    - cp -r code/android/Teamup/app/build/outputs/lint-results* artifacts
+#  allow_failure: true
+#  when: on_failure
+#  artifacts:
+#    paths:
+#     - artifacts
+#  tags:
+#    - android
+#    - teamup
+
+test:
+  stage: test
+  script:
+    - pwd
+    - ./gradlew lint
+    - ./gradlew test
+  tags:
+    - android
+  environment: developement
