@@ -37,9 +37,9 @@ public class SamplePaymentFormActivity extends AppCompatActivity implements Cred
 
 
     private static final String BASE_URL = VolleyWebServiceApiClient.DEFAULT_BASE_URL;
-    public final static long USER_ID = 480l;
-    public final static String HMAC_KEY = "644gZTvd8KR2V+Lf4I9zmSnZVuXxd5YTT2U/CTKXHhk=";
-    public final static long SPACE_ID = 316;
+    public final static long USER_ID = 526l;
+    public final static String HMAC_KEY = "R1x818iST62GkGMgkm1zYKQ3N0Y7YiRRFdrycbs7KII=";
+    public final static long SPACE_ID = 412;
 
     private final CheckoutFragment checkoutFragment = new CheckoutFragment();
     private final ActivityAwarePaymentFragment paymentFragment = new ActivityAwarePaymentFragment();
@@ -88,6 +88,8 @@ public class SamplePaymentFormActivity extends AppCompatActivity implements Cred
     }
 
     private void startPayment() {
+        checkoutFragment.setFailureMessage(null);
+        checkoutFragment.setShowSuccessMessage(false);
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.checkout_fragment_container, paymentFragment);
         fragmentTransaction.addToBackStack(null);
