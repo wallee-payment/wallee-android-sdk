@@ -1,0 +1,27 @@
+sudo: false
+language: android
+android:
+  components:
+    - tools
+    # The SDK version used to compile your project
+    - android-26
+    # The BuildTools version used by your project
+    - build-tools-26.0.0
+
+    - extra-android-support
+    - extra-android-m2repository
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.m2/repository
+
+script: 
+  - ./gradlew test
+  - ./gradlew build
+
+after_success:
+  - /bin/sh ./before_deploy.sh
+  - /bin/sh ./deploy.sh

@@ -29,7 +29,7 @@ android {
     }
 
     lintOptions {
-        warningsAsErrors true
+        warningsAsErrors false
         abortOnError true
         disable 'OldTargetApi','UnusedResources', 'Typos'
     }
