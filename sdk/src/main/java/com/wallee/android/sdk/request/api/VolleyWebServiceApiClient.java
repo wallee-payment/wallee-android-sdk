@@ -194,7 +194,6 @@ public final class VolleyWebServiceApiClient implements WebServiceApiClient {
             @Override
             public void process(Credentials parameter) {
                 String url = baseUrl + "transaction/processOneClickTokenWithCredentials?credentials=" + parameter.getCredentials() + "&tokenId=" + token.getId();
-                System.out.print(url);
                 Response.Listener<JSONObject> handler = new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
