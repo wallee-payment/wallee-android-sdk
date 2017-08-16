@@ -19,7 +19,9 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.m2/repository
 
-script: ./gradlew build
+script:
+  - ./gradlew test 
+  - ./gradlew build
 
 before_deploy: ./before_deploy.sh
 deploy:
