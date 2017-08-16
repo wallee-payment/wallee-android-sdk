@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/wallee-payment/wallee-android-sdk.svg?branch=master)](https://travis-ci.org/wallee-payment/wallee-android-sdk)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.wallee/wallee-android-sdk/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.wallee/wallee-android-sdk)
 
 # wallee-android-sdk
 
@@ -7,7 +8,11 @@ Android apps.
 
 # Install Dependency
 
-FIXME
+To start using wallee API you will have to add a dependency to your project's build file:
+
+```groovy
+compile "com.wallee:wallee-android-sdk:1.0.0"
+```
 
 # Basic Usage
 
@@ -62,3 +67,7 @@ The SDK is build in layers:
 Each of the above layers can be used as pleased. This implies that an app can use only the web
 services and implements the rest by itself or it can also use the different views, but with a
 different flow.
+
+# Documentation
+
+For detailed information about wallee API please see [wallee documentation](https://app-wallee.com/doc/api/web-service).
