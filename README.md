@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/wallee-payment/wallee-android-sdk.svg?branch=master)](https://travis-ci.org/wallee-payment/wallee-android-sdk)
+
+# wallee-android-sdk
+
 This project allows to integrate the <a href="https://wallee.com">wallee payment service</a> into
 Android apps.
 
