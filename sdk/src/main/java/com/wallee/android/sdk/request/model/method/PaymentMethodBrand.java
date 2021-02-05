@@ -3,6 +3,8 @@ package com.wallee.android.sdk.request.model.method;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.wallee.android.sdk.util.ParcelableHelper;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
